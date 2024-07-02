@@ -8,7 +8,7 @@ $data = json_decode(file_get_contents("php://input"));
 
 $text = $data->text;
 
-$client = new Client("AIzaSyDiH94kvVd1Z3Shm-Vo_BZ28GNiYJDZJA8");
+$client = new Client(""); // Need to ask for the API Key to make the chabot function.
 
 $response = $client->geminiPro()->generateContent(new TextPart($text));
 
