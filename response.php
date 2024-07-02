@@ -8,7 +8,7 @@ $data = json_decode(file_get_contents("php://input"));
 
 $text = $data->text;
 
-$client = new Client(""); // Need to ask for the API Key to make the chabot function.
+$client = new Client(""); // Did a mistake with pushing while API Key is still inside the code, API Key already revoke. If you want to see the chatbot function please contact me so i can show you the function with my new API Key
 
 $response = $client->geminiPro()->generateContent(new TextPart($text));
 
